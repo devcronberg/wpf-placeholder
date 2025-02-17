@@ -37,12 +37,12 @@ public partial class MainWindow : Window
 
     private async void Button2_Click(object sender, RoutedEventArgs e)
     {
-        await Log("Button 2 clicked");
+        await Log("Button 2 clicked", sender, 1000);
     }
 
     private async void Button3_Click(object sender, RoutedEventArgs e)
     {
-        await Log("Button 3 clicked");
+        await Log("Button 3 clicked", sender, 1000);
     }
 
 }
