@@ -5,17 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTest"
         mc:Ignorable="d"
-        Title="WPF Demo" Height="500" Width="500">
+        Title="WPF Template" Height="500" Width="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="200" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Button x:Name="Button1" Grid.Row="1" Content="Button 1" HorizontalAlignment="Center" Width="300" Margin="0,10" Padding="20" Cursor="Hand" />
         <Button x:Name="Button2" Grid.Row="2" Content="Button 2" HorizontalAlignment="Center" Width="300" Margin="0,10" Padding="20" Cursor="Hand" />
         <Button x:Name="Button3" Grid.Row="3" Content="Button 3" HorizontalAlignment="Center" Width="300" Margin="0,10" Padding="20" Cursor="Hand" />
+        <TextBox x:Name="LogTextBox" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" IsReadOnly="True" />
     </Grid>
 </Window>
